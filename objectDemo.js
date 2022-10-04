@@ -41,3 +41,18 @@ arr[0].greeting()
 
 
 console.log(arr)
+
+class Puppy extends Dog {
+    constructor(name, color, age, trainingLevel) {
+        super(name, color, age)
+        this.trainingLevel = trainingLevel
+    }
+
+    levelUp(num) {
+        this.trainingLevel += num
+    }
+}
+
+let cutie = new Puppy("frank", "red", 1, 15)
+
+cutie.levelUp(50)
